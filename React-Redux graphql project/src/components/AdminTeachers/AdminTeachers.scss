@@ -1,0 +1,28 @@
+.admin-user-table-wrapper {
+  background: #ffffff;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+.serach-input-wrapper {
+  margin-bottom: 1.5rem;
+  .serach-input {
+    background: #ffffff;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    .serach-input-controll {
+      flex: 1;
+    }
+    .serach-input-add-user {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      > button {
+        height: auto;
+      }
+    }
+  }
+}
+.dots {
+  cursor: pointer;
+}

@@ -1,0 +1,163 @@
+@import "../../assets/scss/variable";
+
+.career{
+  width: 100%;
+  .current-job-section {
+   padding-bottom: 80px;
+    .jobs {
+      display: flex;
+      flex-wrap: wrap;
+      .job {
+        width: calc(33.33% - 40px);
+        margin: 20px;
+        background: #063E82;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px -1px $primary;
+        transition: 0.3s;
+        text-decoration: none;
+        .job-header {
+          h6 {
+            margin: 0;
+            font-size: 18px;
+            text-align: left;
+            color: $textColor;
+            font-family: $font-medium;
+            transition: 0.3s;
+          }
+          padding: 10px 0;
+          margin: 0 0 15px;
+          border-bottom: 1px solid $primary;
+          transition: 0.3s;
+        }
+        .job-body {
+          display: flex;
+          flex-direction: column;
+          transition: 0.3s;
+          span {
+            color: $textColor;
+            font-size: 16px;
+            font-family: $font-regular;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            margin: 0 0 10px;
+            svg {
+              font-size: 18px;
+              margin-right: 6px;
+            }
+            &:last-child {
+              svg {
+                margin: 0 0 0 6px;
+              }
+            }
+          }
+        }
+        .job-footer {
+          display: flex;
+          justify-content: flex-start;
+          span {
+            font-size: 14px;
+            color: $textColor;
+            font-family: $font-regular;
+          }
+        }
+        &:hover {
+          box-shadow: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .our-recruitment-section {
+    background: rgb(0,39,103);
+    background: linear-gradient(90deg,
+                rgba(0,39,103,1) 0%,
+                rgba(36,89,174,1) 31.4%,
+                rgba(48,106,199,1) 50.2%,
+                rgba(36,90,176,1) 64.4%,
+                rgba(0,39,103,1) 100%);
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+    .process-steps {
+      margin: 50px 0 0 0;
+      li {
+        width: calc(33.33% - 50px);
+        margin: 0 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: $secondary;
+        border-radius: 15px;
+        padding: 35px 25px;
+        transition: 0.5s;
+        img {
+          width: 75px;
+          height: 60px;
+          object-fit: contain;
+        }
+        h6 {
+          margin: 20px 0;
+          color: $textColor;
+          text-align: center;
+          font-size: 26px;
+          font-family: $font-bold;
+        }
+        p {
+          margin: 0;
+          color: $textColor;
+          text-align: center;
+          font-size: 16px;
+          font-family: $font-medium;
+        }
+        &:hover {
+          box-shadow: 0 0 10px -3px $textColor;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .our-benefits-section {
+    padding-bottom: 0;
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+    .benefits {
+      margin: 50px 0 0 0;
+      flex-wrap: wrap;
+      li {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        padding: 0 15px;
+        cursor: pointer;
+        img {
+          width: 102px;
+          height: 102px;
+          object-fit: contain;
+          background: $textColor;
+          padding: 25px;
+          border-radius: 15px;
+        }
+        h6 {
+          margin: 25px 0 0 0;
+          color: $textColor;
+          font-family: $font-bold;
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+  }
+}

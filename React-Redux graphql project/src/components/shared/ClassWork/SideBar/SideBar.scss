@@ -1,0 +1,30 @@
+.sidebar-wrapper {
+  display: flex;
+  // border: 1px solid red;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+  .sidebar {
+    display: flex;
+    // justify-content: center;
+    flex-direction: column;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    border-radius: 0.5rem;
+    // box-shadow: 0 2px 5px #ccc;
+    .sidebar-all {
+      // border: 1px solid red;
+      cursor: pointer;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      text-transform: capitalize;
+      &:hover {
+        background-color: lighten(#1890ff, 40%);
+      }
+    }
+  }
+}
+.active {
+  font-weight: 500;
+  color: #1890ff;
+}

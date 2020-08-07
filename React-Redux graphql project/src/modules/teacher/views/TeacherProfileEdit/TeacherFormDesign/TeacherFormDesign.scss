@@ -1,0 +1,61 @@
+.teacher-profile-edit-wrapper {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  flex-direction: row;
+  height: fit-content;
+  border-bottom: 1px solid #eee;
+  border-right: 1px solid #eee;
+  box-shadow: 0 4px 8px #ccc;
+  border-radius: 0.5rem;
+  .teacher-profile-edit-side {
+    display: flex;
+    background: linear-gradient(0deg, rgba(142, 233, 253, 1) 19%, rgba(23, 170, 240, 1) 93%);
+    width: 33%;
+    flex-direction: column;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    .teacher-profile-side-text-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: fit-content;
+      margin: 1.5rem;
+      .teacher-profile-side-heading {
+        margin-bottom: 0.7rem;
+      }
+      .teacher-profile-side-content {
+        text-align: justify;
+        line-height: 1.7;
+        font-size: 1rem;
+        color: darken(#adadad, 15%);
+        color: darken(#17aaf0, 20%);
+      }
+    }
+    .teacher-profile-side-bottom {
+      display: flex;
+      height: 100%;
+      &-logo {
+        display: flex;
+        width: 100%;
+        position: relative;
+        height: 100%;
+        overflow: hidden;
+        & img {
+          position: absolute;
+          left: 10%;
+          top: 75%;
+          transform: scale(1.5, 1.5);
+        }
+      }
+    }
+  }
+  .teacher-profile-edit-main {
+    position: relative;
+    display: flex;
+    background-color: #f6f6f6;
+    width: 67%;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+}

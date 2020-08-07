@@ -1,0 +1,20 @@
+.analytics-card-row {
+  display: flex;
+  > div {
+    margin-right: 1rem;
+  }
+}
+.ongoing-class-wrapper {
+  background: #ffffff;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+  padding: 1.5rem;
+  .ongoing-class {
+    .ongoing-class-title-bar {
+      display: flex;
+      > h1 {
+        margin-left: 1rem;
+      }
+    }
+  }
+}

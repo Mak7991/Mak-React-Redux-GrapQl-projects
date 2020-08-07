@@ -1,0 +1,47 @@
+.notification-box {
+  display: flex;
+  cursor: pointer;
+  padding: 1rem;
+  height: fit-content;
+  &:not(:last-child) {
+    border-bottom: 1px solid lighten(gray, 35%);
+  }
+  .notification-text-area {
+    flex: 1;
+    min-width: 300px;
+    width: 300px;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    .notification-text-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .notification-text {
+      display: flex;
+      margin-left: 0.5rem;
+      align-items: baseline;
+      border-left: 1px solid lighten(gray, 35%);
+      padding-left: 0.5rem;
+      &-detial {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        p {
+          margin: 0;
+        }
+        span {
+          color: lighten(gray, 20%);
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
+.notify-success {
+  background-color: lighten(#e6f7ff, 2%);
+  &:hover {
+    background-color: darken(#e6f7ff, 3%);
+  }
+}

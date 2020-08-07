@@ -1,0 +1,17 @@
+.post-body-wrapper {
+  margin-bottom: 1rem;
+  .post-body {
+    .post-body-media-content {
+      display: flex;
+      flex-wrap: wrap;
+      .post-media {
+        max-width: 200px;
+        margin: 10px 10px;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}

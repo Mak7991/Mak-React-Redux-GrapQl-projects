@@ -1,0 +1,36 @@
+.heading {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  .heading-position {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    z-index: 1;
+    width: 20%;
+    text-align: center;
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid #1890ff;
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+    letter-spacing: 0.8rem;
+    box-shadow: 0 4px 8px #ccc;
+    .heading-style {
+      width: 100%;
+      font-size: 1rem;
+    }
+  }
+  .heading-line-position {
+    position: absolute;
+    width: 100%;
+    top: 52%;
+    transform: translateY(-50%);
+    z-index: 0;
+    .heading-line-color {
+      height: 1px;
+      border: none;
+      background-color: #1890ff;
+    }
+  }
+}

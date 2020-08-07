@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+}
+.content-page {
+  padding: 100px 0;
+  .page-title {
+    margin: 0 0 30px  0;
+    font-size: 32px;
+    color: $primary;
+    font-family: $font-medium;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+    border-bottom: 2px solid $primary;
+  }
+  p {
+    margin: 30px 0 0 0;
+    font-size: 16px;
+    color: $darkTextColor;
+    font-family: $font-regular;
+    line-height: 30px;
+  }
+  h4 {
+    color: $primaryTextColor;
+    font-family: $font-regular;
+    font-size: 24px;
+    margin: 50px 0 0 0;
+  }
+  ul {
+    padding: 0;
+    margin: 40px 0 0 0;
+    list-style: none;
+    li {
+      font-size: 16px;
+      color: $darkTextColor;
+      font-family: $font-regular;
+      line-height: 30px;
+      margin: 0 0 15px 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      &:before {
+        content: '';
+        width: 7px;
+        height: 7px;
+        background-color: $secondary;
+        border-radius: 100px;
+        display: inline-block;
+        margin-right: 20px;
+      }
+    }
+  }
+}
+.normal-section {
+  background: $secondary;
+  padding: 100px 0;
+  .gm-style-iw {
+    .gm-style-iw-d {
+      max-width: 330px !important;
+    }
+    max-width: 330px !important;
+  }
+}
+.normal-section {
+  width: 100%;
+  background: $secondary;
+  padding: 100px 0;
+  .normal-section-heading {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    h1 {
+      font-size: 50px;
+      text-align: center;
+      margin: 0 auto;
+      text-align: center;
+      color: $textColor;
+      font-family: $font-bold;
+      border-bottom: 2px solid $primary;
+      padding: 0 0 10px 0;
+      text-transform: uppercase;
+    }
+  }
+}
+.saiyara-theme {
+  position: relative;
+}
+.scroll-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: $textColor;
+  border-radius: 100%;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease all;
+  box-shadow: 0 0 8px 0 $textColor;
+  transform: scale(0);
+  &.show {
+    transform: scale(1);
+  }
+  svg {
+    color: $secondary;
+    font-size: 28px;
+    transition: 0.3s ease all;
+  }
+  &:hover {
+    cursor: pointer;
+    background: $secondary;
+    svg {
+      color: $textColor;
+    }
+  }
+}
+.gradient-layer {
+  background: linear-gradient(to bottom, $secondary, #2459AE, #306AC7, $secondary);
+  .vehicle-options {
+    background: transparent;
+  }
+}
+.normal-button {
+  padding: 10px 50px;
+  font-family: $font-regular;
+  color: $textColor;
+  background: $primary !important;
+  border-color: $primary;
+}
+.heading {
+  margin: 0;
+  color: $textColor;
+  font-family: $font-bold;
+  text-transform: uppercase;
+}

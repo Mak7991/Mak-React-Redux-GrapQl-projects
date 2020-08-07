@@ -1,0 +1,17 @@
+.input-comment-wrapper {
+  .input-comment-title {
+    margin-bottom: 1rem;
+  }
+  .input-comment {
+    display: flex;
+    .input-comment-text-input {
+      flex: 1;
+      margin-left: 1rem;
+    }
+  }
+  .input-commnet-post-button {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+}

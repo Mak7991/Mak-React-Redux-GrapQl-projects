@@ -1,0 +1,14 @@
+.main-view-wrapper {
+  // overflow: hidden;
+  position: relative;
+  .main-view {
+    display: flex;
+    .main-view-left-side {
+    }
+    .main-view-right-side {
+      flex: 1;
+      //  this was having problem in layout with tabs and table
+      width: 83%;
+    }
+  }
+}

@@ -1,0 +1,100 @@
+@import "../../../assets/scss/variable";
+
+.job {
+  .normal-section {
+    padding-bottom: 50px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    padding-right: 15px;
+    h1 {
+      margin: 0 0 15px;
+      color: white;
+      font-size: 28px;
+      font-family: $font-bold;
+    }
+    .locationAndRole {
+      margin: 0 0 15px;
+      display: flex;
+      flex-direction: column;
+      span {
+        margin-bottom: 10px;
+        color: white;
+        display: flex;
+        align-items: center;
+        font-family: $font-regular;
+        svg {
+          margin-right: 15px;
+          font-size: 24px;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    p {
+      margin: 0 0 15px;
+      color: white;
+      font-size: 14px;
+      line-height: 24px;
+      font-family: $font-light;
+    }
+    h4 {
+      margin: 15px 0 15px;
+      color: white;
+      text-transform: uppercase;
+      font-family: $font-medium;
+    }
+
+  }
+  .form-section {
+    padding-left: 15px;
+    h6 {
+      margin: 0 0 20px 0;
+      font-size: 28px;
+      color: white;
+      text-transform: uppercase;
+      font-family: $font-bold;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    .form-group {
+      .form-label {
+        color: white;
+        font-size: 16px;
+        text-transform: capitalize;
+      }
+      .input-with-text {
+        input {
+          height: 40px;
+        }
+        input, textarea {
+          border-radius: 2px;
+          font-family: $font-light;
+          color: $secondary;
+          padding: 5px 15px;
+          resize: none;
+        }
+      }
+    }
+    .button-container {
+      margin: 15px 0 0;
+      display: flex;
+      justify-content: flex-end;
+      button {
+        padding: 10px 45px;
+        font-size: 16px;
+        background: transparent !important;
+        transition: 0.3s;
+        border-radius: 2px;
+        text-transform: uppercase;
+        &:hover {
+          background: $primary !important;
+        }
+      }
+    }
+  }
+}

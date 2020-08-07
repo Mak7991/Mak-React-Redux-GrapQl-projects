@@ -1,0 +1,78 @@
+.classroom-post-wrapper {
+  // margin-bottom: 1.5rem;
+  // border: 1px solid #dadce0;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background: #ffffff;
+  cursor: pointer;
+  .classroom-post {
+    display: flex;
+    align-items: center;
+    .classroom-post-text-content {
+      margin-left: 1rem;
+    }
+  }
+}
+
+.normal-post-wrapper {
+  background: #ffffff;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  .normal-post {
+    .normal-post-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+      .normal-post-header-text-content {
+        margin-left: 1rem;
+      }
+    }
+    .normal-post-body-wrapper {
+      margin-bottom: 1rem;
+      .normal-post-body {
+        .normal-post-body-text-content {
+        }
+        .normal-post-body-media-content {
+          display: flex;
+          flex-wrap: wrap;
+          .post-media {
+            max-width: 200px;
+            margin: 10px 10px;
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+    .normal-post-footer {
+      display: flex;
+      > div {
+        flex: 1;
+      }
+    }
+    .normal-post-comment-box {
+      text-align: center;
+      margin-top: 1rem;
+      .normal-post-comments {
+        .normal-post-comment {
+          display: flex;
+          margin-bottom: 1rem;
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+        }
+      }
+      .normal-post-comment-text {
+        margin-left: 1rem;
+        background-color: #f2f2f2;
+        padding: 0.5rem 1rem;
+        border-radius: 16px;
+      }
+      h4 {
+        text-transform: capitalize;
+      }
+    }
+  }
+}

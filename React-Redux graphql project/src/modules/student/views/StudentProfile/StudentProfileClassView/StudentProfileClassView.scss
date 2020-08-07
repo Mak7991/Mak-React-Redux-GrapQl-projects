@@ -1,0 +1,56 @@
+.student-profile-class-view-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  // border: 1px solid red;
+  border-bottom: 1px solid #eee;
+  border-right: 1px solid #eee;
+  box-shadow: 0 4px 8px #ccc;
+  border-radius: 0.5rem;
+  // height: 90vh;
+  .student-profile-class-view-heading {
+    display: flex;
+    // border: 1px solid blue;
+    flex-direction: row;
+    &-icon {
+      height: 3vw;
+      width: 3vw;
+      display: flex;
+      align-self: center;
+      background-size: cover;
+      margin: 1rem;
+      // border: 1px solid red;
+    }
+    &-content {
+      display: flex;
+      align-self: center;
+      border-left: 1px solid lighten(gray, 30%);
+      padding: 0.7rem 1rem;
+    }
+  }
+  .student-profile-class-view-line {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background-color: lighten(gray, 25%);
+    width: 90%;
+    height: 0.8rem;
+    border-radius: 100%;
+    clip-path: polygon(50% 35%, 100% 48%, 100% 52%, 50% 75%, 0 52%, 0 48%);
+  }
+  .student-profile-class-view-rooms {
+    // margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    // border: 1px solid red;
+    // height: 80%;
+    padding: 1rem;
+    .student-profile-class-view-classes {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+}

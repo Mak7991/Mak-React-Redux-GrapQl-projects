@@ -1,0 +1,79 @@
+.assignment-detail-wrapper {
+  // background: #ffffff;
+  // padding: 1.5rem;
+  // border-radius: 0.5rem;
+  display: flex;
+
+  .assignment-detail {
+    display: flex;
+    flex: 8;
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 3px 6px #ccc;
+    .assignment-detail-right-side {
+      flex: 1;
+      margin-left: 1rem;
+      > div {
+        .assignment-detail-header {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 1rem;
+        }
+        .assignment-detail-avatar-info {
+          display: flex;
+          align-items: center;
+          margin-bottom: 1rem;
+          > div {
+            margin-right: 10px;
+          }
+        }
+        .normal-post-body-wrapper {
+          margin-bottom: 1rem;
+          .normal-post-body {
+            .normal-post-body-media-content {
+              display: flex;
+              flex-wrap: wrap;
+              .post-media {
+                max-width: 200px;
+                margin: 10px 10px;
+                img {
+                  width: 100%;
+                  height: auto;
+                }
+              }
+            }
+          }
+        }
+      }
+      .assignment-detail-comment-box {
+        > h3 {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+  .assignment-detail-submit-box {
+    flex: 2;
+    min-width: 200px;
+    margin-left: 1rem;
+    height: fit-content;
+    padding: 1.2rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 3px 6px #ccc;
+    .assignment-heading {
+      margin-bottom: 0.5rem;
+    }
+    .assignment-detail-button-box {
+      display: flex;
+      flex-direction: column;
+    }
+    .assignment-detail-button {
+      margin-bottom: 1rem;
+      .assignment-detail-button-color {
+        color: #40a9ff;
+      }
+    }
+  }
+}

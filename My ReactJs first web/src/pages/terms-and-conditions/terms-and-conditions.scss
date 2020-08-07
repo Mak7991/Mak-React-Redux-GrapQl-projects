@@ -1,0 +1,17 @@
+@import "../../assets/scss/variable";
+
+.content-page{
+    background: linear-gradient(to bottom, $secondary, #2459AE, #306AC7, $secondary);
+    h4{
+    color: $primary;
+    }
+    p{
+     color: $textColor;   
+    }
+    ul{
+        list-style: none;
+        li{
+            color: $textColor;
+        }
+    }
+}

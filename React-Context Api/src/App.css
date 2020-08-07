@@ -1,0 +1,201 @@
+/* -----------------Mainpage----------------- */
+
+.mainpage{
+  width: auto;
+  background-color: #696b62;
+}
+.barlink{
+  font-weight: bold;
+  background-color:#ffba66;
+  border-radius: 8px;
+  margin: 4px;
+}
+.modal-btn{
+  font-weight: bold;
+  padding: 10px;
+  width: 100px;
+  background-color:#ffba66;
+  border-radius: 8px;
+  border: white;
+  cursor: pointer;
+}
+.main-modal{
+  background-color: bisque;
+  border-radius: 8px;
+  padding: 10px;
+}
+.main-modal>form{
+  font-weight: bold;
+}
+.modal-heading{
+  text-align: center;
+}
+.modal-heading>h1{
+  background-color: #ffba66;
+  padding: 10px;
+  border-radius: 6px;
+}
+.main-modal>hr{
+  border: 1px solid;
+  box-shadow:  1px 1px 6px 1px black;
+  color: black;
+}
+.modal-check{
+  margin-left:21px ;
+}
+.modalsubmit{
+  background-color:#ffba66;
+}
+.submit{
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+  border: 2px solid black;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.coverslider{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.footer{
+  background-color: #ffba66;
+}
+.footer-link{
+  color: black;
+}
+.footerText{
+  padding: 20px;
+}
+.icon-bar{
+  background-color:bisque;
+  text-align: center;
+  padding: 12px;
+  height: 40px;
+}
+.icon-link{
+  color: black;
+}
+.cover-img{
+  width: 100%;
+  height: 500px;
+}
+.sliding-img{
+  width: 100%;
+  height: 500px;
+  padding: 20px;
+}
+
+/* -------------------Animation Box--------------------- */
+
+.bounceInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+  -webkit-animation-duration: 12;
+  animation-duration: 12s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes slideInLeft {
+  0% {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  visibility: visible;
+  }
+  100% {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  }
+  }
+  @keyframes slideInLeft {
+  0% {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  visibility: visible;
+  }
+  100% {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  }
+  } 
+
+  /* ----------------cover-Title----------------- */
+  .coverTitle {
+    -webkit-animation-name: bounceInDown;
+    animation-name: bounceInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes bounceInDown {
+    0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0);
+    }
+    
+    60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+    }
+    
+    75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+    }
+    
+    90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+    }
+    
+    100% {
+    -webkit-transform: none;
+    transform: none;
+    }
+    }
+    
+    @keyframes bounceInDown {
+    0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0);
+    }
+    
+    60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+    }
+    
+    75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+    }
+    
+    90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+    }
+    
+    100% {
+    -webkit-transform: none;
+    transform: none;
+    }
+    } 
+   /* ----------------cover-Title----------------- */
+

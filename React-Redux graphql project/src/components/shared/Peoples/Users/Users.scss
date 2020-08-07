@@ -1,0 +1,26 @@
+.users {
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  &:not(:last-child) {
+    border-bottom: 1px solid lighten(gray, 35%);
+    margin-bottom: 1rem;
+  }
+  .user-avatar {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding-left: 1rem;
+  }
+  .user-text {
+    display: flex;
+    align-items: center;
+    padding: 0.8rem 0;
+
+    .user-name {
+      padding: 0.4rem 1.5rem;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+    }
+  }
+}

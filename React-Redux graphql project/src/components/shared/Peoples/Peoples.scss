@@ -1,0 +1,30 @@
+.people-box {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  background-color: white;
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 20px;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 8px #ccc;
+  .people-teacher {
+    margin-top: 2rem;
+  }
+  .people-students {
+    margin-top: 3rem;
+  }
+  .people-gap {
+    margin-top: 2rem;
+    .noassign-center-text {
+      display: flex;
+      margin-top: 3rem;
+      justify-content: center;
+      h4 {
+        color: red;
+        text-transform: capitalize;
+        font-weight: 700;
+      }
+    }
+  }
+}

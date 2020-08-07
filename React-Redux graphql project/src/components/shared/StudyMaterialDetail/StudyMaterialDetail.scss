@@ -1,0 +1,30 @@
+.study-material-detail-wrapper {
+  display: flex;
+  .study-material-detail {
+    display: flex;
+    flex: 8;
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 3px 6px #ccc;
+    .study-material-detail-right-side {
+      flex: 1;
+      margin-left: 1rem;
+      > div {
+        .study-material-detail-header {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 1rem;
+        }
+        .study-material-detail-avatar-info {
+          display: flex;
+          align-items: center;
+          margin-bottom: 1rem;
+          > div {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}

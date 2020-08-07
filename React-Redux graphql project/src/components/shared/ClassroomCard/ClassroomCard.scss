@@ -1,0 +1,38 @@
+.classroom-card {
+  width: 400px;
+  margin: 20px;
+  .classroom-img {
+    height: 16.5rem;
+    background: linear-gradient(rgba(93, 136, 61, 0.6), rgba(220, 208, 38.5, 1));
+  }
+  .card-child {
+    position: absolute;
+    top: 0;
+    padding: 40px 30px;
+    left: 0;
+    h1 {
+      color: #fff;
+      text-transform: capitalize;
+    }
+  }
+  .card-child:hover {
+    h1 {
+      text-decoration: underline;
+    }
+  }
+  .teacher-name {
+    position: absolute;
+    bottom: 18%;
+    color: #fff;
+    text-transform: capitalize;
+  }
+  .teacher-avatar {
+    position: absolute;
+    bottom: 3%;
+    right: 5%;
+    .ant-avatar-lg {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}

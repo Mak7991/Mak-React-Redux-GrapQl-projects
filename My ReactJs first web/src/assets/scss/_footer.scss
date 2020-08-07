@@ -1,0 +1,39 @@
+.footer {
+  background-color: $secondaryDark;
+  padding: 15px 0;
+  p {
+    margin: 2px 0;
+    font-size: 18px;
+    font-family: $font-regular;
+    color: $primary;
+    text-align: left;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    li {
+      margin-right: 10px;
+      a {
+        color: $textColor !important;
+        padding: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s;
+        font-size: 14px;
+        border: 1px solid $textColor;
+        border-radius: 25px;
+        &:hover {
+          color: $secondaryDark !important;
+          background-color: $textColor;
+        }
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

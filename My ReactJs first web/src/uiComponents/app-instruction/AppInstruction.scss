@@ -1,0 +1,79 @@
+@import "../../assets/scss/variable";
+
+.app-instruction {
+  padding: 50px 0;
+  // background: linear-gradient($secondary, #2459AE#2459AE);
+  
+  h1 {
+    color: $textColor;
+    font-size: 44px;
+    font-family: $font-medium;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  .app-instruction-slider{
+    padding-top: 100px;
+    position: relative;
+    .app-slide {
+      .app-slide-image {
+        width: 650px;
+        height: 400px;
+        margin: auto;
+        object-fit: contain;
+        // opacity: 80%;
+      }
+      h2{
+        font-family: $font-medium;
+        text-transform: uppercase;
+        color:$textColor ;
+        padding-bottom: 20px;
+      }
+      p{
+        font-family: $font-regular;
+        color:$textColor ;
+        width: auto;
+      }
+    }
+    .slick-arrow {
+      top: -52px;
+      right: 0;
+      left: auto;
+      width: 52px;
+      height: 52px;
+      border: 2px solid $textColor;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &.slick-prev {
+        right: 62px;
+        &::before {
+          content: '';
+          height: 15px;
+          width: 15px;
+          border-style: solid;
+          border-color: white;
+          border-width: 0px 2px 2px 0px;
+          transform: rotate(140deg);
+          transition: border-width 150ms ease-in-out;
+          display: inline-block;
+          margin: 0 0 0 7px;
+        }
+      }
+      &.slick-next {
+        &::before {
+          content: '';
+          height: 15px;
+          width: 15px;
+          border-style: solid;
+          border-color: white;
+          border-width: 0px 2px 2px 0px;
+          transform: rotate(-48deg);
+          transition: border-width 150ms ease-in-out;
+          display: inline-block;
+          margin: 0 0 0 -7px;
+        }
+      }
+    }
+  }
+}

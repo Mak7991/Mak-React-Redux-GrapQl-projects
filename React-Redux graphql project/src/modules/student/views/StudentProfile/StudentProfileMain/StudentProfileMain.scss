@@ -1,0 +1,269 @@
+.student-profile-main-wrapper {
+  display: flex;
+  border-bottom: 1px solid #eee;
+  border-right: 1px solid #eee;
+  box-shadow: 0 4px 8px #ccc;
+  border-radius: 0.5rem;
+  height: fit-content;
+  flex-direction: column;
+  position: relative;
+  .student-profile-main-background {
+    display: flex;
+    position: relative;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    .student-profile-main-background-button {
+      position: absolute;
+      left: 2rem;
+      top: 2rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      transition: all 0.2s;
+      border-radius: 2rem;
+      width: max-content;
+      z-index: 1;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 2rem;
+        background-color: rgba(gray, 0.4);
+        animation: box-button-close 0.5s linear forwards;
+        z-index: -1;
+      }
+      &:hover::after {
+        animation: box-button-open 0.5s linear forwards;
+      }
+      &:hover {
+        .student-profile-main-background-button-btn {
+          background: none;
+          animation: animation-btn-open 0.3s linear forwards;
+        }
+        .student-profile-main-background-button-icon {
+          transform: rotateZ(90deg);
+        }
+      }
+      &-icon {
+        padding: 0.5rem;
+        border-radius: 100%;
+        font-size: 1.2rem;
+        background-color: rgba(gray, 0.4);
+        transition: all 0.3s linear;
+      }
+      &-btn {
+        outline: none;
+        border: none;
+        width: 0;
+        padding: 0;
+        background: none;
+        color: black;
+        animation: animation-btn-close 0.3s linear forwards;
+        &:focus {
+          outline: none;
+          border: none;
+        }
+      }
+    }
+    .student-profile-main-border-color {
+      transform: translate(-50%, -50%);
+      position: absolute;
+      top: 94%;
+      left: 50%;
+      padding: 0.4rem;
+      // background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+      background: linear-gradient(to right bottom, #334d50, #cbcaa5);
+      border-radius: 100%;
+      &:hover .student-profile-main-upload {
+        visibility: visible;
+        background-color: rgba(gray, 0.8);
+        opacity: 1;
+      }
+    }
+    .student-profile-main-upload {
+      display: flex;
+      visibility: hidden;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      position: absolute;
+      padding-top: 3rem;
+      top: 8%;
+      left: 8%;
+      width: 85%;
+      height: 85%;
+      border-radius: 100%;
+      transition: all 0.2s linear;
+      opacity: 0;
+
+      &-icon {
+        display: flex;
+        font-size: 1.5rem;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+      }
+    }
+    .student-profile-main-picture {
+      padding: 0.3rem;
+      border-radius: 100%;
+      background-color: #fff;
+    }
+  }
+  .student-profile-main-content-box {
+    display: flex;
+    flex-direction: column;
+    .student-profile-main-info {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      padding: 1.5rem;
+      flex-wrap: wrap;
+      .student-profile-main-info-content {
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        padding: 1rem;
+        text-align: left;
+        &-heading {
+          display: flex;
+          height: fit-content;
+          color: #aaaaaa;
+          margin-bottom: 0.2rem;
+          &-icon {
+            display: flex;
+            align-items: center;
+            font-size: 1.2rem;
+          }
+          &-content {
+            display: flex;
+            align-items: center;
+            margin-left: 0.5rem;
+          }
+        }
+        &-detail {
+          display: flex;
+          color: #1b252a;
+          font-size: 1rem;
+        }
+        .student-profile-main-name {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          & > p {
+            margin-top: 0.5rem;
+            color: #aaaaaa;
+          }
+        }
+      }
+    }
+    .student-profile-main-social-links {
+      display: flex;
+      flex-direction: column;
+      &-line {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        background-color: lighten(gray, 25%);
+        width: 90%;
+        height: 0.8rem;
+        border-radius: 100%;
+        clip-path: polygon(50% 35%, 100% 48%, 100% 52%, 50% 75%, 0 52%, 0 48%);
+      }
+      &-group {
+        display: flex;
+        flex-direction: row;
+        width: 35%;
+        justify-content: space-evenly;
+        align-self: center;
+        margin: 1rem 0;
+        font-size: 2rem;
+        &-icon-1 {
+          color: #4267b2; //facebook
+        }
+        &-icon-2 {
+          color: black; //github
+        }
+        &-icon-3 {
+          color: #1da1f2; //twitter
+        }
+        &-icon-4 {
+          color: #fd1d1d; //instagram
+        }
+      }
+    }
+  }
+}
+.picture-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70vh;
+  .picture-modal {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    object-fit: cover;
+  }
+}
+
+@keyframes animation-btn-open {
+  from {
+    width: 0;
+    opacity: 0;
+    padding: 0;
+    display: none;
+  }
+  to {
+    padding: 4px 15px;
+    width: 100%;
+    opacity: 1;
+    display: flex;
+  }
+}
+@keyframes animation-btn-close {
+  from {
+    padding: 4px 15px;
+    width: 100%;
+    opacity: 1;
+    display: flex;
+  }
+  to {
+    width: 0;
+    opacity: 0;
+    padding: 0;
+    display: none;
+  }
+}
+@keyframes box-button-open {
+  from {
+    width: 0%;
+    opacity: 0;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+@keyframes box-button-close {
+  to {
+    width: 0%;
+    opacity: 0;
+  }
+  from {
+    opacity: 1;
+    width: 100%;
+  }
+}

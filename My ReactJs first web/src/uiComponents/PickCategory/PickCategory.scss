@@ -1,0 +1,66 @@
+@import "../../assets/scss/variable";
+
+.vehicle-options {
+  padding: 50px 0;
+  background-color: $secondary;
+  h1 {
+    color: $textColor;
+    font-size: 44px;
+    font-family: $font-medium;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  .vehicle-slider {
+    padding-top: 100px;
+    position: relative;
+    .vehicle-slide {
+      .vehicle-slide-image {
+        width: 715px;
+        height: 360px;
+        margin: auto;
+        object-fit: contain;
+      }
+    }
+    .slick-arrow {
+      top: -52px;
+      right: 0;
+      left: auto;
+      width: 52px;
+      height: 52px;
+      border: 2px solid $textColor;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &.slick-prev {
+        right: 62px;
+        &::before {
+          content: '';
+          height: 15px;
+          width: 15px;
+          border-style: solid;
+          border-color: white;
+          border-width: 0px 2px 2px 0px;
+          transform: rotate(140deg);
+          transition: border-width 150ms ease-in-out;
+          display: inline-block;
+          margin: 0 0 0 7px;
+        }
+      }
+      &.slick-next {
+        &::before {
+          content: '';
+          height: 15px;
+          width: 15px;
+          border-style: solid;
+          border-color: white;
+          border-width: 0px 2px 2px 0px;
+          transform: rotate(-48deg);
+          transition: border-width 150ms ease-in-out;
+          display: inline-block;
+          margin: 0 0 0 -7px;
+        }
+      }
+    }
+  }
+}

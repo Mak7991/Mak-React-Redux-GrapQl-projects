@@ -1,0 +1,26 @@
+.comment {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  .comment-box {
+    margin-left: 1rem;
+    .comment-box-author {
+      padding-left: 1rem;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: baseline;
+      span {
+        margin-left: 10px;
+      }
+    }
+    .comment-text {
+      // margin-left: 1rem;
+      background-color: #f2f2f2;
+      padding: 0.5rem 1rem;
+      border-radius: 16px;
+    }
+  }
+}

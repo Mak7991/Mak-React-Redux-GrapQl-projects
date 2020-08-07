@@ -1,0 +1,98 @@
+@import "../../assets/scss/variable";
+
+.pilot-text p{
+    color: $textColor;
+    text-align: center;
+    font-size: 26px;
+    font-family: $font-regular;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 120px;
+}
+.pilot-intro{
+    padding-bottom: 150px;
+    .pilot-app-intro{
+        width: 100%;
+        height: 682px;
+        background-image: url("../../assets/images/pilot-app-intro.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+}
+.betterment{
+    padding-top: 150px;
+    justify-content: center;
+    height: 1150px;
+    background: linear-gradient( $secondary, rgb(16, 72, 161));
+    h1{
+      color: $primary;
+      font-size: 44px;
+      padding-bottom: 80px;  
+      text-transform: uppercase;
+      flex-direction: column;
+    }
+    p{
+      font-size: 18px;
+      text-align: left;
+      color: $textColor;
+    }
+    ul {
+      list-style: none;
+      margin: 0 0 100px 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      li {
+        display: flex;
+        width: 100%;
+        }
+    }
+   .betterment-cover{
+        width: 100%;
+        height: 682px;
+        background-image: url("../../assets/images/video-cover.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    } 
+   
+}
+.condition-and-rules{
+  padding-top: 100px;
+  background: linear-gradient(rgb(16, 72, 161),$secondary);
+  padding-bottom: 150px;
+  justify-content: center;
+  .rules{
+    border-left: 2px solid $primary;
+    padding-right: 20px;
+  }
+  h6{
+    color: $primary;
+    font-size: 44px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+  }
+  p{
+    font-size: 18px;
+    color: $textColor;
+  }
+  ul{
+    list-style: none;
+  }
+  ul li::before {
+    content: "\2022";
+    color: $primary;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -2em;
+    font-size: 22px;
+  }
+  li{
+    color: $textColor;
+  }
+
+}
+// .pilot-vehicle-category{
+  
+// }

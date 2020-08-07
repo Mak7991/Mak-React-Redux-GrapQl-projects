@@ -1,0 +1,10 @@
+.notify-fail {
+  display: flex;
+  height: fit-content;
+  min-width: 300px;
+  width: 300px;
+  text-align: justify;
+  &-text {
+    width: 100%;
+  }
+}

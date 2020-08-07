@@ -1,0 +1,9 @@
+.classroom-feed-wrapper {
+  .classroom-feed {
+  }
+  .classroom-posts {
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
