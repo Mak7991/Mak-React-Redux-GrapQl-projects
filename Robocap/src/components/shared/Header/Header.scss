@@ -21,10 +21,17 @@
     width: 100%;
     display: flex;
     padding: 10px;
+    .leftMenu{
+      border-bottom: none;
+    }
     .rightMenu {
       padding: 16px;
       align-items: center;
-      margin-left: 100px;
+      margin-left: 90px;
+    }
+    .barsMenu{
+      padding: 16px;
+      font-size: 20px;
     }
   }
 }

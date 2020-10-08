@@ -1,8 +1,8 @@
 import Login from "pages/Login/Login";
-import GoalPanel from "pages/GoalPanel/GoalPanel"
-import Home from "pages/Home/Home"
+import GoalPanel from "pages/GoalPanelHome/GoalPanel"
+import Performance from "pages/Performance/Performance"
 import NotFound from "pages/NotFound/NotFound"
 
 export{
-    Login, GoalPanel, Home, NotFound
+    Login, GoalPanel, Performance, NotFound
 }

@@ -4,7 +4,7 @@ import { Menu } from "antd";
 
 const SubNav = () => {
   return (
-    <Menu mode="horizontal" className="subnav">
+    <Menu mode="horizontal" className="leftMenu">
       <Menu.Item key="mail">
         <Link to="/GoalPanel">Home</Link>
       </Menu.Item>
