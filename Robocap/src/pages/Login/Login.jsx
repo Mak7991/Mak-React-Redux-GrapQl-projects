@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, Input, Button } from "antd";
+import { Form, Input } from "antd";
 import { Link } from 'react-router-dom';
 import "antd/dist/antd.css";
 import "./Login.scss";
@@ -14,11 +14,11 @@ const Login = () => {
     <div className="login">
       <div className="login-body">
         <div className="login-cover">
-          <img src={require("../../assets/images/AuthCover.png")} draggable={false} />
+          <img src={require("../../assets/images/AuthCover.png")} draggable={false} alt="cover"/>
         </div>
         <div className="login-form">
           <div className="form-logo">
-            <img src={require("../../assets/images/logo.png")} />
+            <img src={require("../../assets/images/logo.png")} alt="logo"/>
           </div>
           <div className="login-title">
             <h1>Login To Your Account</h1>
@@ -62,7 +62,7 @@ const Login = () => {
               <Input type="password" placeholder="Password" />
             </Form.Item>
             <Form.Item>
-              <a className="login-form-forgot" href="#" style={{ float: "right" }}>
+              <a className="login-form-forgot" href="/" style={{ float: "right" }}>
                 Forgot your password?
               </a>
             </Form.Item>

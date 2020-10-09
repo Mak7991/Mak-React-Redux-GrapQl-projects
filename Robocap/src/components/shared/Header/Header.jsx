@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 
 // components
-import SubNav from "../SubNav/SubNav";
-import UserNav from "../UserNav/UserNav";
+import SubNav from "./SubNav/SubNav";
+import UserNav from "./UserNav/UserNav";
 // library
 import { Navbar, Image, Container } from "react-bootstrap";
-import { Button, Drawer } from "antd";
+import { Drawer } from "antd";
 import { Link } from "react-router-dom";
 import { MenuFoldOutlined } from "@ant-design/icons";
 // scss
@@ -48,7 +48,7 @@ class Header extends Component {
               <UserNav />
             </div>
             {/* <Button className="barsMenu" type="primary" onClick={this.showDrawer}> */}
-              <MenuFoldOutlined className="barsMenu" type="primary" onClick={this.showDrawer}/>
+            <MenuFoldOutlined className="barsMenu" type="primary" onClick={this.showDrawer} />
             {/* </Button> */}
             <Drawer
               title="Basic Drawer"

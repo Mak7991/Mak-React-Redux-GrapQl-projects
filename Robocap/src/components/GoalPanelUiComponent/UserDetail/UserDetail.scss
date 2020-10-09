@@ -1,0 +1,108 @@
+.detail-panel {
+  background-color: #f6f8fc;
+  display: flex;
+  width: 100%;
+  height: 420px;
+  padding: 30px 80px 30px 160px;
+  .sub-detail-panel {
+    display: flex;
+    .user-detail {
+      width: 50%;
+      padding: 60px 10px 10px 20px;
+      height: 360px;
+      background-color: #fff;
+      border-radius: 10px;
+      h5 {
+        color: #888e98;
+        font-size: 16px;
+      }
+      .contact {
+        display: flex;
+        padding-top: 10px;
+        p {
+          font-size: 16px;
+          color: #888e98;
+        }
+        .anticon {
+          color: #888e98;
+          font-size: 20px;
+          margin-right: 22px;
+        }
+      }
+      .email {
+        display: flex;
+        padding-top: 10px;
+        p {
+          font-size: 16px;
+          color: #888e98;
+        }
+        .anticon {
+          color: #888e98;
+          font-size: 20px;
+          margin-right: 22px;
+        }
+      }
+      .address {
+        display: flex;
+        padding-top: 10px;
+        p {
+          font-size: 16px;
+          color: #888e98;
+        }
+        .anticon {
+          color: #888e98;
+          font-size: 20px;
+          margin-right: 22px;
+        }
+      }
+    }
+    .assets-detail {
+      width: 50%;
+      margin-left: 70px;
+      height: 360px;
+      background-color: #fff;
+      border-radius: 10px;
+      .total-values {
+        padding: 20px;
+        .new-account {
+          text-align: right;
+          color: #2196f3;
+          .new-account-btn {
+            background-color: transparent;
+            padding: 10px ;
+            font-size: 16px;
+            border: 1px solid #2196f3;
+            border-radius: 4px;
+            height: 40px;
+            cursor: pointer;
+            .btn-icon {
+              background-color: #2196f3;
+              margin-right: 5px;
+              border-radius: 100%;
+            }
+          }
+        }
+        .user-assets-detail {
+          display: flex;
+          padding-top: 10px;
+          .icon {
+            width: 50px;
+            height: 50px;
+            padding: 2px;
+            margin-right: 10px;
+          }
+          h5 {
+            padding: 2px;
+            font-size: 16px;
+            color: #888e98;
+          }
+          p {
+            font-size: 16px;
+            color: black;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}
